@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.TypeError'> descriptor 'items' requires a 'dict' object but received a 'list'"
+p3
+sS'layer'
+p4
+S'/var/www/web2py/applications/teste_ldap/controllers/principal.py'
+p5
+sS'code'
+p6
+S"# -*- coding: utf-8 -*-\n\n#fun\xc3\xa7\xc3\xa3o de login\ndef login():\n    return auth.login()\n#fun\xc3\xa7\xc3\xa3o index\n@auth.requires_login()\ndef index():\n    resultado = []\n    for item in dict.items(results):\n        if item != {}:\n            resultado += [item]\n    return response.render('principal/index.html',dict(resultado=(resultado)))\n\ndef logout():\n    return auth.logout()\n\n\nresponse._vars=response._caller(index)\n"
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/var/www/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/var/www/web2py/applications/teste_ldap/controllers/principal.py", line 19, in <module>\n  File "/var/www/web2py/gluon/globals.py", line 393, in <lambda>\n    self._caller = lambda f: f()\n  File "/var/www/web2py/gluon/tools.py", line 3440, in f\n    return action(*a, **b)\n  File "/var/www/web2py/applications/teste_ldap/controllers/principal.py", line 10, in index\n    for item in dict.items(results):\nTypeError: descriptor \'items\' requires a \'dict\' object but received a \'list\'\n'
+p11
+s.

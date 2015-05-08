@@ -1,0 +1,349 @@
+(dp1
+S'output'
+p2
+S'missing "pass" in view'
+p3
+sS'layer'
+p4
+S'ParserContainer'
+p5
+sS'code'
+p6
+S"for item in resultado:\n    response.write('\\n        ', escape=False)\n    response.write(item)"
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__module__'
+p12
+S"'socket'"
+p13
+sS'__getslice__'
+p14
+S"<method-wrapper '__getslice__' of error object>"
+p15
+sS'__str__'
+p16
+S"<method-wrapper '__str__' of error object>"
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of error object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of error object>'
+p23
+sS'__weakref__'
+p24
+S'None'
+p25
+sS'__init__'
+p26
+S"<method-wrapper '__init__' of error object>"
+p27
+sS'__setattr__'
+p28
+S"<method-wrapper '__setattr__' of error object>"
+p29
+sS'__reduce_ex__'
+p30
+S'<built-in method __reduce_ex__ of error object>'
+p31
+sS'__new__'
+p32
+S'<built-in method __new__ of type object>'
+p33
+sS'errno'
+p34
+S'32'
+p35
+sS'__format__'
+p36
+S'<built-in method __format__ of error object>'
+p37
+sS'__class__'
+p38
+S"<class 'socket.error'>"
+p39
+sS'filename'
+p40
+S'None'
+p41
+sS'__doc__'
+p42
+S'None'
+p43
+sS'__getitem__'
+p44
+S"<method-wrapper '__getitem__' of error object>"
+p45
+sS'__setstate__'
+p46
+S'<built-in method __setstate__ of error object>'
+p47
+sS'__getattribute__'
+p48
+S"<method-wrapper '__getattribute__' of error object>"
+p49
+sS'args'
+p50
+S"(32, 'Broken pipe')"
+p51
+sS'__subclasshook__'
+p52
+S'<built-in method __subclasshook__ of type object>'
+p53
+sS'__unicode__'
+p54
+S'<built-in method __unicode__ of error object>'
+p55
+sS'strerror'
+p56
+S"'Broken pipe'"
+p57
+sS'__delattr__'
+p58
+S"<method-wrapper '__delattr__' of error object>"
+p59
+sS'__repr__'
+p60
+S"<method-wrapper '__repr__' of error object>"
+p61
+sS'__hash__'
+p62
+S"<method-wrapper '__hash__' of error object>"
+p63
+ssS'evalue'
+p64
+S'[Errno 32] Broken pipe'
+p65
+sS'frames'
+p66
+(lp67
+(dp68
+S'file'
+p69
+S'/var/www/web2py/gluon/rocket.py'
+p70
+sS'dump'
+p71
+(dp72
+S'self'
+p73
+S'<WSGIWorker(Thread-15, started daemon 140291004688128)>'
+p74
+sS'conn'
+p75
+S'<gluon.rocket.Connection object>'
+p76
+sS'self.run_app'
+p77
+S'<bound method WSGIWorker.run_app of <WSGIWorker(Thread-15, started daemon 140291004688128)>>'
+p78
+ssS'lnum'
+p79
+I1337
+sS'lines'
+p80
+(dp81
+I1332
+S'            # Enter connection serve loop'
+p82
+sI1333
+S'            while True:'
+p83
+sI1334
+S'                if __debug__:'
+p84
+sI1335
+S"                    self.err_log.debug('Serving a request')"
+p85
+sI1336
+S'                try:'
+p86
+sI1337
+S'                    self.run_app(conn)'
+p87
+sI1338
+S'                except:'
+p88
+sI1339
+S'                    exc = sys.exc_info()'
+p89
+sI1340
+S'                    handled = self._handleError(*exc)'
+p90
+sI1341
+S'                    if handled:'
+p91
+ssS'call'
+p92
+S'(self=<WSGIWorker(Thread-15, started daemon 140291004688128)>)'
+p93
+sS'func'
+p94
+S'run'
+p95
+sa(dp96
+g69
+S'/var/www/web2py/gluon/rocket.py'
+p97
+sg71
+(dp98
+S'self'
+p99
+S'<WSGIWorker(Thread-15, started daemon 140291004688128)>'
+p100
+sS'global b'
+p101
+S'<function b>'
+p102
+sS'self.conn.sendall'
+p103
+S'<bound method _socketobject.sendall of <socket._socketobject object>>'
+p104
+sS'self.conn'
+p105
+S'<gluon.rocket.Connection object>'
+p106
+ssg79
+I1859
+sg80
+(dp107
+I1856
+S''
+sI1857
+S"            if self.chunked and self.request_method != 'HEAD':"
+p108
+sI1858
+S'                # If chunked, send our final chunk length'
+p109
+sI1859
+S"                self.conn.sendall(b('0\\r\\n\\r\\n'))"
+p110
+sI1860
+S''
+sI1861
+S"        # Don't capture exceptions here.  The Worker class handles"
+p111
+sI1862
+S'        # them appropriately.'
+p112
+sI1863
+S'        finally:'
+p113
+sI1854
+S'                # Send headers if the body was empty'
+p114
+sI1855
+S"                self.send_headers('', sections)"
+p115
+ssg92
+S'(self=<WSGIWorker(Thread-15, started daemon 140291004688128)>, conn=<gluon.rocket.Connection object>)'
+p116
+sg94
+S'run_app'
+p117
+sa(dp118
+g69
+S'/usr/lib/python2.7/socket.py'
+p119
+sg71
+(dp120
+S'self._sock'
+p121
+S'<socket._closedsocket object>'
+p122
+sS'self'
+p123
+S'<socket._socketobject object>'
+p124
+sS'args'
+p125
+S"('0\\r\\n\\r\\n',)"
+p126
+sS'builtingetattr'
+p127
+S'<built-in function getattr>'
+p128
+sS'name'
+p129
+S"'sendall'"
+p130
+ssg79
+I224
+sg80
+(dp131
+I224
+S'    return getattr(self._sock,name)(*args)'
+p132
+sI225
+S''
+sI226
+S'for _m in _socketmethods:'
+p133
+sI227
+S'    p = partial(meth,_m)'
+p134
+sI228
+S'    p.__name__ = _m'
+p135
+sI219
+S'    family = property(lambda self: self._sock.family, doc="the socket family")'
+p136
+sI220
+S'    type = property(lambda self: self._sock.type, doc="the socket type")'
+p137
+sI221
+S'    proto = property(lambda self: self._sock.proto, doc="the socket protocol")'
+p138
+sI222
+S''
+sI223
+S'def meth(name,self,*args):'
+p139
+ssg92
+S"(name='sendall', self=<socket._socketobject object>, *args=('0\\r\\n\\r\\n',))"
+p140
+sg94
+S'meth'
+p141
+sasS'pyver'
+p142
+S'Python 2.7.6: /usr/bin/python2.7 (prefix: /usr)'
+p143
+sS'etype'
+p144
+S"<class 'socket.error'>"
+p145
+sS'date'
+p146
+S'Fri May  8 10:08:26 2015'
+p147
+sS'locals'
+p148
+(dp149
+S'self'
+p150
+S'<socket._socketobject object>'
+p151
+sg50
+S"('0\\r\\n\\r\\n',)"
+p152
+sS'name'
+p153
+S"'sendall'"
+p154
+sssS'traceback'
+p155
+S'Traceback (most recent call last):\n  File "/var/www/web2py/gluon/rocket.py", line 1337, in run\n    self.run_app(conn)\n  File "/var/www/web2py/gluon/rocket.py", line 1859, in run_app\n    self.conn.sendall(b(\'0\\r\\n\\r\\n\'))\n  File "/usr/lib/python2.7/socket.py", line 224, in meth\n    return getattr(self._sock,name)(*args)\nerror: [Errno 32] Broken pipe\n'
+p156
+s.

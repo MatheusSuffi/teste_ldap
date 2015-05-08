@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<class 'ldap.OPERATIONS_ERROR'> {'info': '000004DC: LdapErr: DSID-0C090724, comment: In order to perform this operation a successful bind must be completed on the connection., data 0, v23f0', 'desc': 'Operations error'}"
+p3
+sS'layer'
+p4
+S'/var/www/web2py/applications/teste_ldap/controllers/principal.py'
+p5
+sS'code'
+p6
+S'# -*- coding: utf-8 -*-\n\n#fun\xc3\xa7\xc3\xa3o de login\ndef login():\n    return auth.login()\n#fun\xc3\xa7\xc3\xa3o index\n@auth.requires_login()\ndef index():\n    return auth.user.first_name\n\ndef logout():\n    return auth.logout()\n\ndef teste():\n    search_filter2 = "Mobile="+username\n    result = connect_ldap.search_s(base_dn,ldap.SCOPE_SUBTREE,search_filter2)\n    return result\nresponse._vars=response._caller(teste)\n'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/var/www/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/var/www/web2py/applications/teste_ldap/controllers/principal.py", line 18, in <module>\n  File "/var/www/web2py/gluon/globals.py", line 393, in <lambda>\n    self._caller = lambda f: f()\n  File "/var/www/web2py/applications/teste_ldap/controllers/principal.py", line 16, in teste\n    result = connect_ldap.search_s(base_dn,ldap.SCOPE_SUBTREE,search_filter2)\n  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 552, in search_s\n    return self.search_ext_s(base,scope,filterstr,attrlist,attrsonly,None,None,timeout=self.timeout)\n  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 546, in search_ext_s\n    return self.result(msgid,all=1,timeout=timeout)[1]\n  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 458, in result\n    resp_type, resp_data, resp_msgid = self.result2(msgid,all,timeout)\n  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 462, in result2\n    resp_type, resp_data, resp_msgid, resp_ctrls = self.result3(msgid,all,timeout)\n  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 469, in result3\n    resp_ctrl_classes=resp_ctrl_classes\n  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 476, in result4\n    ldap_result = self._ldap_call(self._l.result4,msgid,all,timeout,add_ctrls,add_intermediates,add_extop)\n  File "/usr/lib/python2.7/dist-packages/ldap/ldapobject.py", line 99, in _ldap_call\n    result = func(*args,**kwargs)\nOPERATIONS_ERROR: {\'info\': \'000004DC: LdapErr: DSID-0C090724, comment: In order to perform this operation a successful bind must be completed on the connection., data 0, v23f0\', \'desc\': \'Operations error\'}\n'
+p11
+s.

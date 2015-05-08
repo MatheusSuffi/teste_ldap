@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.AttributeError'> 'NoneType' object has no attribute 'auth_user'"
+p3
+sS'layer'
+p4
+S'/var/www/web2py/applications/teste_ldap/controllers/principal.py'
+p5
+sS'code'
+p6
+S'# -*- coding: utf-8 -*-\n\n#fun\xc3\xa7\xc3\xa3o de login\ndef login():\n    return auth.login()\n#fun\xc3\xa7\xc3\xa3o index\n\ndef index():\n    return auth.user.first_name\n\ndef logout():\n    return auth.logout()\n\n\nresponse._vars=response._caller(login)\n'
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/var/www/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/var/www/web2py/applications/teste_ldap/controllers/principal.py", line 15, in <module>\n  File "/var/www/web2py/gluon/globals.py", line 393, in <lambda>\n    self._caller = lambda f: f()\n  File "/var/www/web2py/applications/teste_ldap/controllers/principal.py", line 5, in login\n    return auth()\n  File "/var/www/web2py/gluon/tools.py", line 2480, in login\n    request.vars[passfield]):\n  File "/var/www/web2py/gluon/contrib/login_methods/ldap_auth.py", line 432, in ldap_auth_aux\n    user_in_db = db(db.auth_user.email == username)\nAttributeError: \'NoneType\' object has no attribute \'auth_user\'\n'
+p11
+s.

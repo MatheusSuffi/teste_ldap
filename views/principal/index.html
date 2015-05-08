@@ -1,0 +1,51 @@
+{{for item in resultado:}}
+<table border="1">
+    <tr>
+        <td>
+                Nome
+        </td>
+        {{for item2 in item['displayName']:}}
+        <td>
+           {{=item2}}
+        </td>
+        {{pass}}
+        </tr>
+        <tr>
+
+        <td>
+            Celular
+        </td>
+
+        {{for item2 in item['mobile']:}}
+            <td>
+                {{=item2}}
+            </td>
+        {{pass}}
+    </tr>
+    <tr>
+ <tr>
+
+        <td>
+            Telefone
+        </td>
+
+        {{for item2 in item['mobile']:}}
+            <td>
+                {{=item2}}
+            </td>
+        {{pass}}
+    </tr>
+     <tr>
+
+        <td>
+            Ip-Phone
+        </td>
+
+        {{for item2 in item['ipPhone']:}}
+            <td>
+                {{=item2}}
+            </td>
+        {{pass}}
+    </tr>
+</table>
+{{pass}}

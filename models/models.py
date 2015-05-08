@@ -1,0 +1,1 @@
+auth.define_tables(username=True,signature=False,migrate=True)

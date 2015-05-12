@@ -10,6 +10,7 @@ def index():
     for item in results_ldap:
         if item != {}:
             resultado += [item]
+            print resultado
     return response.render('principal/index.html',resultado=resultado)
 
 #funçao logout

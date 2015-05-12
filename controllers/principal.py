@@ -11,7 +11,7 @@ def index():
         if item != {}:
             resultado += [item]
     return response.render('principal/index.html',resultado=resultado)
-
+#funçao logout
 def logout():
     return auth.logout()
 

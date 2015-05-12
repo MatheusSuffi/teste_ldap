@@ -4,9 +4,12 @@
 def login():
     return auth.login()
 #função index
+
 @auth.requires_login()
 def index():
+
     resultado = []
+    print resultado
     for item in results_ldap:
         if item != {}:
             resultado += [item]

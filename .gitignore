@@ -7,7 +7,6 @@ private
 errors
 databases
 cron
-controllers
 cache
 #Arquivos
 uploads

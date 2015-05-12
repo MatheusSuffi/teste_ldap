@@ -19,4 +19,7 @@ def index():
 #funçao logout
 def logout():
     return auth.logout()
+    
+def teste():
+    return 'teste'
 

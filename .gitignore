@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+languages
+modules
+sessions
+private
+errors
+databases
+cron
+controllers
+cache
+#Arquivos
+uploads
+ABOUT
+LICENSE
+progress.log

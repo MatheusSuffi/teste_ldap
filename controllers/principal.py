@@ -9,7 +9,7 @@ def login():
 def index():
 
     resultado = []
-    print resultado
+    
     for item in results_ldap:
         if item != {}:
             resultado += [item]
